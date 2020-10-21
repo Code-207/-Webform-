@@ -19,7 +19,7 @@ namespace WebApp.Admins.shared
             object ob = Session["Msg"];
             if (ob != null)
             {
-                var res = ob as ReturnMsg<Model.Roles>;
+                var res = ob as ReturnMsg;
                 msg = res.Message;
                 code = (int)res.Code;
 

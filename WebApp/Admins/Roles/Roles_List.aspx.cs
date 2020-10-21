@@ -17,7 +17,11 @@ namespace WebApp.Admins.Roles
         {
             if (IsPostBack)
                 return;
-
+            object ob = Session["LoginOk"];
+            if (ob == null)
+            {
+                Response.Write("<script>alert('账号过期,请重新登入');location.href='../Login.aspx'</script>");
+            }
 
             Bind("");
         }

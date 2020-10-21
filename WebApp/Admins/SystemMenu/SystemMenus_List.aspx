@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admins/shared/_Backend.Master" AutoEventWireup="true" CodeBehind="Users_List.aspx.cs" Inherits="WebApp.Admins.Users.Users_List" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admins/shared/_Backend.Master" AutoEventWireup="true" CodeBehind="SystemMenus_List.aspx.cs" Inherits="WebApp.Admins.SystemMenu.SystemMenus_List" %>
 <%@ Register Assembly="AspNetPager" namespace="Wuqi.Webdiyer" tagPrefix="webdiyer" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>用户列表</title>
+    <title>系统菜单列表</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-      <div class="row mb-1">
+     <div class="row mb-1">
         <div class="col-md-10 col-md-offset-1">
             
             <div class="col-md-5">
@@ -13,8 +13,8 @@
             </div>
             <div class="col-md-4">
                 <%--<button class="btn btn-primary">Go</button>--%>
-                <asp:Button ID="btnSearch" runat="server" Text="Go" CssClass="btn btn-primary" OnClick="btnSearch_OnClick" />
-                <a href="Users_Add.aspx" class="btn btn-success">Insert</a>
+                <asp:Button ID="btnSearch" runat="server" Text="Go" CssClass="btn btn-primary" OnClick="btnSearch_Click" />
+                <a href="SystemMenus_Add.aspx" class="btn btn-success">Insert</a>
                 <button class="btn btn-danger">Delete</button>
             </div>
 
@@ -25,17 +25,17 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">用户表</h3>
+                    <h3 class="panel-title">系统菜单表</h3>
                 </div>
                 <div class="panel-body">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
                                 <th width="5%">编号</th>
-                                <th width="10%">用户账号</th>
-                                <th width="10%">用户昵称</th>
-                                <th width="10%">用户权限</th>
-                                <th width="20%">用户头像</th>
+                                <th width="10%">系统菜单名称</th>
+                                <th width="10%">系统菜单链接</th>
+                                <th width="10%">系统菜单图标</th>
+                                <th width="10%">系统菜单等级</th>
                                 <th width="5%">编辑</th>
                                 <th width="5%">删除</th>
 
@@ -43,29 +43,29 @@
 
                         </thead>
                         <tbody>
-                        <asp:Repeater ID="RepUsersList" runat="server">
+                        <asp:Repeater ID="RepSystemMenusList" runat="server">
                             <ItemTemplate>
                                 <tr>
                                     <td><%#Container.ItemIndex+1 %></td>
                                      <td>
-                                         <%#Eval("Users_Account") %>
+                                         <%#Eval("SystemMenus_Title") %>
                                      </td>   
+                                     <td>
+                                         <%#Eval("SystemMenus_Link") %>
+                                     </td>  
+                                     <td>
+                                        <span class=' <%#Eval("SystemMenus_Icon") %>'></span>
+                                     </td>  
+                                     <td>
+                                         <%#GetMenusTitle(Guid.Parse(Eval("SystemMenus_ParentId").ToString())) %>
+                                     </td>  
                                     <td>
-                                        <%#Eval("Users_NickName") %>
-                                    </td>
-                                    <td>
-                                        <%#Eval("Users_Account") %>
-                                    </td>
-                                    <td>
-                                        <img src='../../upload/users/<%#Eval("Users_Photo") %>' style="width: 100px; height: 50px;"/>
-                                    </td>
-                                    <td>
-                                        <a class="btn btn-warning" href='Users_Edit.aspx?action=<%#Eval("Users_Id") %>'>
+                                        <a class="btn btn-warning" href='SystemMenus_Edit.aspx?action=<%#Eval("SystemMenus_Id") %>'>
                                             <span class="lnr lnr-pencil"></span> 修改
                                         </a>
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger" href='Users_Remove.aspx?action=<%#Eval("Users_Id") %>'>
+                                        <a class="btn btn-danger" href='SystemMenus_Remove.aspx?action=<%#Eval("SystemMenus_Id") %>'>
                                             <span class="lnr lnr-trash"></span> 删除
                                         </a>
                                     </td>
@@ -90,7 +90,7 @@
                                       CustomInfoTextAlign="Left" HorizontalAlign="Right" PageIndexBoxType="TextBox"  
                                       ShowCustomInfoSection="Left" ShowMoreButtons="False" ShowNavigationToolTip="True"
                                       runat="server" AlwaysShow="True" PageSize="8" ShowInputBox="Never"
-                                      LayoutType="Table" OnPageChanging="AspNetPager1_OnPageChanging" 
+                                      LayoutType="Table" OnPageChanging="AspNetPager1_PageChanging" 
                                       FirstPageText="首页" LastPageText="尾页" NextPageText="下一页" PrevPageText="上一页" 
                                       PagingButtonSpacing="2px" SubmitButtonClass="btngo">
                 </webdiyer:AspNetPager>

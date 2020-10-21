@@ -7,11 +7,11 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace WebApp.Admins.Users
+namespace WebApp.Admins.SystemMenu
 {
 
 
-    public partial class Users_List
+    public partial class SystemMenus_List
     {
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace WebApp.Admins.Users
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// RepUsersList 控件。
+        /// RepSystemMenusList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RepUsersList;
+        protected global::System.Web.UI.WebControls.Repeater RepSystemMenusList;
 
         /// <summary>
         /// AspNetPager1 控件。

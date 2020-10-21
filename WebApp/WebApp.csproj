@@ -124,11 +124,20 @@
     <Content Include="Admins\assets\vendor\toastr\toastr.js" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.css" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.js" />
+    <Content Include="Admins\Login.aspx" />
     <Content Include="Admins\Roles\Roles_Add.aspx" />
     <Content Include="Admins\Roles\Roles_Edit.aspx" />
     <Content Include="Admins\Roles\Roles_List.aspx" />
     <Content Include="Admins\Roles\Roles_Remove.aspx" />
+    <Content Include="Admins\SystemMenu\SystemMenus_Add.aspx" />
+    <Content Include="Admins\SystemMenu\SystemMenus_Edit.aspx" />
+    <Content Include="Admins\SystemMenu\SystemMenus_List.aspx" />
+    <Content Include="Admins\SystemMenu\SystemMenus_Remove.aspx" />
+    <Content Include="Admins\Users\Users_Add.aspx" />
+    <Content Include="Admins\Users\Users_Edit.aspx" />
     <Content Include="Admins\Users\Users_List.aspx" />
+    <Content Include="Admins\Users\Users_Remove.aspx" />
+    <Content Include="Admins\Welcome\Welcome.aspx" />
     <Content Include="Global.asax" />
     <Content Include="kindeditor\attached\image\20130111\20130111170504_8743.png" />
     <Content Include="kindeditor\attached\image\20130129\20130129144318_3595.jpg" />
@@ -337,6 +346,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admins\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\Roles\Roles_Add.aspx.cs">
       <DependentUpon>Roles_Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -372,6 +388,48 @@
     <Compile Include="Admins\shared\_Backend.Master.designer.cs">
       <DependentUpon>_Backend.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_Add.aspx.cs">
+      <DependentUpon>SystemMenus_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_Add.aspx.designer.cs">
+      <DependentUpon>SystemMenus_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_Edit.aspx.cs">
+      <DependentUpon>SystemMenus_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_Edit.aspx.designer.cs">
+      <DependentUpon>SystemMenus_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_List.aspx.cs">
+      <DependentUpon>SystemMenus_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_List.aspx.designer.cs">
+      <DependentUpon>SystemMenus_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_Remove.aspx.cs">
+      <DependentUpon>SystemMenus_Remove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\SystemMenu\SystemMenus_Remove.aspx.designer.cs">
+      <DependentUpon>SystemMenus_Remove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Users\Users_Add.aspx.cs">
+      <DependentUpon>Users_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Users\Users_Add.aspx.designer.cs">
+      <DependentUpon>Users_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Users\Users_Edit.aspx.cs">
+      <DependentUpon>Users_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Users\Users_Edit.aspx.designer.cs">
+      <DependentUpon>Users_Edit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\Users\Users_List.aspx.cs">
       <DependentUpon>Users_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -379,6 +437,21 @@
     <Compile Include="Admins\Users\Users_List.aspx.designer.cs">
       <DependentUpon>Users_List.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\Users\Users_Remove.aspx.cs">
+      <DependentUpon>Users_Remove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Users\Users_Remove.aspx.designer.cs">
+      <DependentUpon>Users_Remove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Welcome\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Welcome\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MD5Helper.cs" />
     <Compile Include="App_Code\ReturnMsg.cs" />
     <Compile Include="App_Code\StatusCode.cs" />
     <Compile Include="Global.asax.cs">

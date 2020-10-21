@@ -15,6 +15,11 @@ namespace WebApp.Admins.Roles
         {
             if (IsPostBack)
                 return;
+            object ob = Session["LoginOk"];
+            if (ob == null)
+            {
+                Response.Write("<script>alert('账号过期,请重新登入');location.href='../Login.aspx'</script>");
+            }
 
         }
 
@@ -33,14 +38,14 @@ namespace WebApp.Admins.Roles
             //    Response.Write("<script>alert('新增失败');'</script>");
             //}
 
-            ReturnMsg<Model.Roles> rm  = res > 0
-                  ? new ReturnMsg<Model.Roles>()
+            ReturnMsg rm  = res > 0
+                  ? new ReturnMsg()
                   {
                       Code = StatusCode.Ok,
                       Message = "新增权限成功",
                       Data = null
                   }
-                  : new ReturnMsg<Model.Roles>()
+                  : new ReturnMsg()
                   {
                       Code = StatusCode.Error,
                       Message = "新增权限失败",

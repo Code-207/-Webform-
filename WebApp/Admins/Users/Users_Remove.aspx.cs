@@ -6,11 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BLL;
 
-namespace WebApp.Admins.Roles
+namespace WebApp.Admins.Users
 {
-    public partial class Roles_Remove : System.Web.UI.Page
+    public partial class Users_Remove : System.Web.UI.Page
     {
-        private readonly  RolesService roleSvc = new RolesService();
+        private readonly UsersService usersSvc = new UsersService();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
@@ -25,21 +25,21 @@ namespace WebApp.Admins.Roles
             if (id != null)
             {
                 Guid rid = Guid.Parse(id);
-                var res = roleSvc.PutTrash(rid);
+                var res = usersSvc.PutTrash(rid);
                 ReturnMsg rm = res > 0 ? new ReturnMsg()
                     {
                         Code = StatusCode.Ok,
-                        Message = "删除权限成功",
+                        Message = "删除用户信息成功",
                         Data = null
                     }
                     : new ReturnMsg()
                     {
                         Code = StatusCode.Error,
-                        Message = "删除权限失败",
+                        Message = "删除用户信息失败",
                         Data = null
                     };
                 Session["Msg"] = rm;
-                Response.Redirect("Roles_List.aspx");
+                Response.Redirect("Users_List.aspx");
             }
         }
     }
