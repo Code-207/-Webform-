@@ -77,5 +77,21 @@ namespace DAL
             return SqlHelper<SystemMenus>.Query(sql, new SystemMenus { SystemMenus_ParentId = parentId });
         }
 
+
+        public IList<SystemMenus> GetSystemMenusesByIdList(string idList) 
+        {
+            string sql = "select * from SystemMenus where SystemMenus_DeleteId = 1 and SystemMenus_Id not in("+idList+")";
+            return SqlHelper<SystemMenus>.Query(sql, null);
+        }
+
+
+        public IList<SystemMenus> GetSystemMenusByRolesIdAndParnetId(Guid rid, Guid parentId)
+        {
+            string sql = "select * from SystemMenus where SystemMenus_ParentId = '"+parentId+ 
+                         "' and SystemMenus_Id in(select UsersPermissions_SystemMenuId from UsersPermissions where UsersPermissions_RolesId = '" +rid+"' )";
+            return SqlHelper<SystemMenus>.Query(sql, null);
+        }
+
+
     }
 }

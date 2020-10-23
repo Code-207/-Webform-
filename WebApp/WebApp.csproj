@@ -133,6 +133,7 @@
     <Content Include="Admins\SystemMenu\SystemMenus_Edit.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_List.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_Remove.aspx" />
+    <Content Include="Admins\UsersPermissions\UsersPermissions_List.aspx" />
     <Content Include="Admins\Users\Users_Add.aspx" />
     <Content Include="Admins\Users\Users_Edit.aspx" />
     <Content Include="Admins\Users\Users_List.aspx" />
@@ -415,6 +416,13 @@
     </Compile>
     <Compile Include="Admins\SystemMenu\SystemMenus_Remove.aspx.designer.cs">
       <DependentUpon>SystemMenus_Remove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\UsersPermissions\UsersPermissions_List.aspx.cs">
+      <DependentUpon>UsersPermissions_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\UsersPermissions\UsersPermissions_List.aspx.designer.cs">
+      <DependentUpon>UsersPermissions_List.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\Users\Users_Add.aspx.cs">
       <DependentUpon>Users_Add.aspx</DependentUpon>

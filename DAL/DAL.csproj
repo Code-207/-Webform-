@@ -50,6 +50,7 @@
     <Compile Include="SqlHelper.cs" />
     <Compile Include="SystemMenuManager.cs" />
     <Compile Include="UsersManager.cs" />
+    <Compile Include="UsersPermissionsManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

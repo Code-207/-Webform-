@@ -66,5 +66,15 @@ namespace BLL
         {
             return dal.GetSystemMenusByParentId(parentId);
         }
+
+        public IList<SystemMenus> GetSystemMenusesByIdList(string idList)
+        {
+            return dal.GetSystemMenusesByIdList(idList);
+        }
+
+        public IList<SystemMenus> GetSystemMenusByRolesIdAndParnetId(Guid rid, Guid parentId)
+        {
+            return dal.GetSystemMenusByRolesIdAndParnetId(rid, parentId);
+        }
     }
 }
