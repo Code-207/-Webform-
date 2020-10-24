@@ -1,7 +1,15 @@
-﻿namespace Model
+﻿using System;
+
+namespace Model
 {
-    public class Copyrights : BaseEntity
+    public class Copyrights 
     {
+        public Guid Copyrights_Id { get; set; } = Guid.NewGuid();
+
+        public int Copyrights_DeleteId { get; set; } = 1;
+
+        public DateTime Copyrights_CreateTime { get; set; } = DateTime.Now;
+        public DateTime Copyrights_UpdateTime { get; set; } = DateTime.Now;
         public string Copyrights_Title { get; set; }
         public string Copyrights_Details { get; set; }
         public string Copyrights_Tel { get; set; }

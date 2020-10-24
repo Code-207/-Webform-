@@ -22,7 +22,7 @@ namespace WebApp.Admins
             if (data != null)
             {
                 Session["LoginOk"] = data;
-                Response.Write("<script>alert('登入成功');location.href='Welcome/Welcome.aspx'</script>");
+                Response.Write("<script>location.href='Welcome/Welcome.aspx'</script>");
             }
             else
             {

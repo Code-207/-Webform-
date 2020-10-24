@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admins\About\About_List.aspx" />
     <Content Include="Admins\assets\css\bootstrap.css" />
     <Content Include="Admins\assets\css\bootstrap.min.css" />
     <Content Include="Admins\assets\css\demo.css" />
@@ -347,6 +348,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admins\About\About_List.aspx.cs">
+      <DependentUpon>About_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\About\About_List.aspx.designer.cs">
+      <DependentUpon>About_List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -473,6 +481,55 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Web\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Loan.aspx.cs">
+      <DependentUpon>Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Loan.aspx.designer.cs">
+      <DependentUpon>Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\NewsInfo.aspx.cs">
+      <DependentUpon>NewsInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\NewsInfo.aspx.designer.cs">
+      <DependentUpon>NewsInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\shared\Frontend.Master.cs">
+      <DependentUpon>Frontend.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\shared\Frontend.Master.designer.cs">
+      <DependentUpon>Frontend.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="kindeditor\asp.net\file_manager_json.ashx" />
@@ -505,11 +562,67 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web\About.aspx" />
+    <Content Include="Web\assets\css1\style.css" />
+    <Content Include="Web\assets\images\banner.jpg" />
+    <Content Include="Web\assets\images\banner_1.png" />
+    <Content Include="Web\assets\images\banner_2.png" />
+    <Content Include="Web\assets\images\banner_3.png" />
+    <Content Include="Web\assets\images\banner_4.png" />
+    <Content Include="Web\assets\images\banner_5.png" />
+    <Content Include="Web\assets\images\div.png" />
+    <Content Include="Web\assets\images\dt.jpg" />
+    <Content Include="Web\assets\images\fotter41.png" />
+    <Content Include="Web\assets\images\fotter51.png" />
+    <Content Include="Web\assets\images\fotter52.png" />
+    <Content Include="Web\assets\images\fotter_21.png" />
+    <Content Include="Web\assets\images\index_11.png" />
+    <Content Include="Web\assets\images\index_12.png" />
+    <Content Include="Web\assets\images\index_13.png" />
+    <Content Include="Web\assets\images\index_21.png" />
+    <Content Include="Web\assets\images\index_22.png" />
+    <Content Include="Web\assets\images\index_3.png" />
+    <Content Include="Web\assets\images\index_3_nran.png" />
+    <Content Include="Web\assets\images\index_4.png" />
+    <Content Include="Web\assets\images\index_5.png" />
+    <Content Include="Web\assets\images\index_6.png" />
+    <Content Include="Web\assets\images\logo.jpg" />
+    <Content Include="Web\assets\images\xydk1.png" />
+    <Content Include="Web\assets\images\xydk21.png" />
+    <Content Include="Web\assets\images\xydk3.png" />
+    <Content Include="Web\assets\images\xydk41.png" />
+    <Content Include="Web\assets\images\xydk42.png" />
+    <Content Include="Web\assets\images\xydk43.png" />
+    <Content Include="Web\assets\images\xydk44.png" />
+    <Content Include="Web\assets\images\xydk45.png" />
+    <Content Include="Web\assets\images\xydk46.png" />
+    <Content Include="Web\assets\images\xydk47.png" />
+    <Content Include="Web\assets\images\xydk48.png" />
+    <Content Include="Web\assets\images\xydk4_11.png" />
+    <Content Include="Web\assets\images\xydk4_12.png" />
+    <Content Include="Web\assets\images\xydk4_13.png" />
+    <Content Include="Web\assets\images\xydk4_14.png" />
+    <Content Include="Web\assets\images\xydk5_1.png" />
+    <Content Include="Web\assets\images\xydk5_l.png" />
+    <Content Include="Web\assets\images\xydk6.png" />
+    <Content Include="Web\assets\js1\jquery-1.9.1.js" />
+    <Content Include="Web\assets\js1\rollinginthedeep.js" />
+    <Content Include="Web\assets\js1\zzsc.js" />
+    <Content Include="Web\Contact.aspx" />
+    <Content Include="Web\Index.aspx" />
+    <Content Include="Web\Loan.aspx" />
+    <Content Include="Web\NewsInfo.aspx" />
+    <Content Include="Web\NewsList.aspx" />
+    <Content Include="Web\shared\Frontend.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admins\WebMenu\" />
     <Folder Include="App_Data\" />
     <Folder Include="kindeditor\asp.net\bin\" />
     <Folder Include="Models\" />
+    <Folder Include="upload\about\" />
+    <Folder Include="Web\assets\images1\" />
+    <Folder Include="Web\assets\images\images\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

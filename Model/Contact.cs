@@ -1,7 +1,15 @@
-﻿namespace Model
+﻿using System;
+
+namespace Model
 {
-    public class Contact : BaseEntity
+    public class Contact 
     {
+        public Guid Contact_Id { get; set; } = Guid.NewGuid();
+
+        public int Contact_DeleteId { get; set; } = 1;
+
+        public DateTime Contact_CreateTime { get; set; } = DateTime.Now;
+        public DateTime UpdateTime { get; set; } = DateTime.Now;
         public string Contact_Address { get; set; }
 
         public string Contact_QQ1 { get; set; }
