@@ -150,3 +150,45 @@ img{ border:none;}
 .zx_zzqh p span{ color:#666;}
 .zx_zzqh p span a{ color:#666;}
 .zx_zzqh p span a:hover{ color:#ff7525; text-decoration:none;}
+
+
+.pages {
+    color: #999;
+}
+
+.pages a, .pages .cpb {
+    text-decoration: none;
+    float: left;
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    background: #ffff;
+    margin: 0 2px;
+    font-size: 11px;
+    color: #000;
+}
+
+.pages a:hover {
+    background-color: #3c96ca;
+    color: #fff;
+    border: 1px solid #3c96ca;
+    text-decoration: none;
+}
+
+.pages .cpb {
+    font-weight: bold;
+    color: #fff;
+    background: #3c96ca;
+    border: 1px solid #3c96ca;
+}
+
+.pages .srk {
+    height: 13px;
+    font-size: 12px;
+    vertical-align: middle
+}
+
+.pages .btngo {
+    width: 26px;
+    height: 15px;
+    vertical-align: middle;
+}

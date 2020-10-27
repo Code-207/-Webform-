@@ -28,19 +28,26 @@
     </ul>
     <div class="index_2">
         <div class="index_21">新闻资讯</div>
-        <div class="index_22"><a href="#">
+        <div class="index_22"><a href="NewsList.aspx">
             <img src="assets/images/index_22.png" width="34" height="43" /></a></div>
         <div class="clear"></div>
         <div class="index_23">
             <img src="assets/images/index_3.png" width="272" height="185" /></div>
         <ul class="index_24">
-            <li><a href="#">公积金活期余额可用于还贷款</a><span>2014/12/12</span></li>
+            <%--<li><a href="#">公积金活期余额可用于还贷款</a><span>2014/12/12</span></li>
             <li><a href="#">沈阳首批“助保贷”正式发放 贷款额度达到5亿元</a><span>2014/12/12</span></li>
             <li><a href="#">房贷收紧的背后究竟是何原因</a><span>2014/12/12</span></li>
-            <li><a href="#">沈阳二套房贷款利率上浮10%</a><span>2014/12/12</span></li>
+            <li><a href="#">沈阳二套房贷款利率上浮10%</a><span>2014/12/12</span></li>--%>
+            <asp:Repeater ID="RepNewsList" runat="server">
+                <ItemTemplate>
+                    <li><a href='NewsInfo.aspx?id=<%#Eval("News_Id") %>'><%#Eval("News_Title") %></a><span><%#DateTime.Parse(Eval("News_CreateTime").ToString()).ToString("yyyy/MM/dd") %></span></li>
+                </ItemTemplate>
+            </asp:Repeater>
         </ul>
         <div class="clear"></div>
-        <div class="index_25">查看更多&nbsp;&gt;&gt;</div>
+        <div class="index_25">
+            <a href="NewsList.aspx">查看更多&nbsp;&gt;&gt;</a>
+        </div>
     </div>
 
 

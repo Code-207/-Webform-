@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/shared/Frontend.Master" AutoEventWireup="true" CodeBehind="NewsList.aspx.cs" Inherits="WebApp.Web.NewsList" %>
+<%@ Register Assembly="AspNetPager" Namespace="Wuqi.Webdiyer" TagPrefix="webdiyer" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>好信速贷--新闻列表页</title>
     <script>
@@ -16,7 +17,16 @@
 </div>
 <div class="zx">
   <ul>
-    <li>
+      <asp:Repeater ID="RepNewsList" runat="server">
+          <ItemTemplate>
+              <li>
+                  <div class="zx_left"><a href='NewsInfo.aspx?id=<%#Eval("News_Id") %>'><%#Eval("News_Title") %></a></div>
+                  <div class="zx_right"><a href='NewsInfo.aspx?id=<%#Eval("News_Id") %>'><%#DateTime.Parse(Eval("News_CreateTime").ToString()).ToString("yyyy-MM-dd") %></a></div>
+              </li>
+          </ItemTemplate>
+
+      </asp:Repeater>
+    <%--<li>
       <div class="zx_left"><a href="#">全园运动 趣味恒生 ——2014恒生科技园首届创意交流趣味运动会圆满落幕</a></div>
       <div class="zx_right"><a href="#">2014-08-05</a></div>
     </li>
@@ -55,25 +65,22 @@
     <li>
       <div class="zx_left"><a href="#">惠普起诉Autonomy前CFO 指控其插手公司内部事务</a></div>
       <div class="zx_right"><a href="#">2014-08-05</a></div>
-    </li>
+    </li>--%>
     <div class="clear"></div>
   </ul>
 </div>
 <div class="fy">
   <div class="gyhd_fy">
-    <ul>
-      <li><a href="#">&lt;</a></li>
-      <li>1</li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">6</a></li>
-      <li><a href="#">7</a></li>
-      <li><a href="#">8</a></li>
-      <li><a href="#">&gt;</a></li>
-      <div class="clear"></div>
-    </ul>
+      <div class="pagin">
+          <webdiyer:AspNetPager ID="AspNetPager1" CssClass="pages" CurrentPageButtonClass="cpb"
+                                CustomInfoTextAlign="Left" HorizontalAlign="Right" PageIndexBoxType="TextBox"
+                                ShowCustomInfoSection="Left" ShowMoreButtons="False" ShowNavigationToolTip="True"
+                                runat="server" AlwaysShow="True" PageSize="10" ShowInputBox="Never"
+                                LayoutType="Table" OnPageChanging="AspNetPager1_OnPageChanging"
+                                 NextPageText=">" PrevPageText="<"
+                                PagingButtonSpacing="2px" SubmitButtonClass="btngo">
+          </webdiyer:AspNetPager>
+      </div>
   </div>
   <div class="clear"></div>
 </div>
