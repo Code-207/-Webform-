@@ -40,6 +40,11 @@ namespace BLL
             return dal.GetAll();
         }
 
+        public IList<WebMenus> GetAllWhatIsShow()
+        {
+            return dal.GetAllWhatIsShow();
+        }
+
         public IList<WebMenus> GetWebMenusByTitle(string title)
         {
             return dal.GetWebMenusByTitle(title);

@@ -20,7 +20,7 @@ namespace WebApp.Web.shared
 
             #region 绑定导航导航栏
 
-            this.RepWebMenusList.DataSource = webMenusSvc.GetAll();
+            this.RepWebMenusList.DataSource = webMenusSvc.GetAllWhatIsShow();
             this.RepWebMenusList.DataBind();
 
             #endregion

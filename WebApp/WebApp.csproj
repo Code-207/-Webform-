@@ -128,13 +128,17 @@
     <Content Include="Admins\Login.aspx" />
     <Content Include="Admins\LoginOut.aspx" />
     <Content Include="Admins\News\News_Add.aspx" />
+    <Content Include="Admins\News\News_Edit.aspx" />
     <Content Include="Admins\News\News_List.aspx" />
+    <Content Include="Admins\News\News_Remove.aspx" />
     <Content Include="Admins\Roles\Roles_Add.aspx" />
     <Content Include="Admins\Roles\Roles_Edit.aspx" />
     <Content Include="Admins\Roles\Roles_List.aspx" />
     <Content Include="Admins\Roles\Roles_Remove.aspx" />
     <Content Include="Admins\Seos\Seos_Add.aspx" />
+    <Content Include="Admins\Seos\Seos_Edit.aspx" />
     <Content Include="Admins\Seos\Seos_List.aspx" />
+    <Content Include="Admins\Seos\Seos_Remove.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_Add.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_Edit.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_List.aspx" />
@@ -382,12 +386,26 @@
     <Compile Include="Admins\News\News_Add.aspx.designer.cs">
       <DependentUpon>News_Add.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\News\News_Edit.aspx.cs">
+      <DependentUpon>News_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\News\News_Edit.aspx.designer.cs">
+      <DependentUpon>News_Edit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\News\News_List.aspx.cs">
       <DependentUpon>News_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admins\News\News_List.aspx.designer.cs">
       <DependentUpon>News_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\News\News_Remove.aspx.cs">
+      <DependentUpon>News_Remove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\News\News_Remove.aspx.designer.cs">
+      <DependentUpon>News_Remove.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\Roles\Roles_Add.aspx.cs">
       <DependentUpon>Roles_Add.aspx</DependentUpon>
@@ -424,12 +442,26 @@
     <Compile Include="Admins\Seos\Seos_Add.aspx.designer.cs">
       <DependentUpon>Seos_Add.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\Seos\Seos_Edit.aspx.cs">
+      <DependentUpon>Seos_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Seos\Seos_Edit.aspx.designer.cs">
+      <DependentUpon>Seos_Edit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\Seos\Seos_List.aspx.cs">
       <DependentUpon>Seos_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admins\Seos\Seos_List.aspx.designer.cs">
       <DependentUpon>Seos_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Seos\Seos_Remove.aspx.cs">
+      <DependentUpon>Seos_Remove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Seos\Seos_Remove.aspx.designer.cs">
+      <DependentUpon>Seos_Remove.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\shared\_Backend.Master.cs">
       <DependentUpon>_Backend.Master</DependentUpon>

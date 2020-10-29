@@ -73,13 +73,14 @@
   <div class="gyhd_fy">
       <ul>
           <webdiyer:AspNetPager ID="AspNetPager1" CssClass="pages" CurrentPageButtonClass="cpb"
-                                CustomInfoTextAlign="Left" HorizontalAlign="Right" PageIndexBoxType="TextBox"
-                                ShowCustomInfoSection="Left" ShowMoreButtons="False" ShowNavigationToolTip="True"
-                                runat="server" AlwaysShow="True" PageSize="10" ShowInputBox="Never"
-                                LayoutType="Table" OnPageChanging="AspNetPager1_OnPageChanging"
-                                 NextPageText=">" PrevPageText="<"
-                                PagingButtonSpacing="2px" SubmitButtonClass="btngo">
+                                CustomInfoTextAlign="Right" HorizontalAlign="Right" ShowCustomInfoSection="Left"
+                                ShowMoreButtons="false" ShowNavigationToolTip="false" ShowFirstLast="false" NumericButtonCount="5"
+                                EnableTheming="True" runat="server" AlwaysShow="True" PageSize="10" LayoutType="Table"
+                                OnPageChanging="AspNetPager1_OnPageChanging" PagingButtonSpacing="2px" CustomInfoSectionWidth="">
           </webdiyer:AspNetPager>
+               
+          <div class="clear">
+          </div>
       </ul>
   </div>
   <div class="clear"></div>

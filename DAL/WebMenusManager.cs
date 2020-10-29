@@ -41,8 +41,13 @@ namespace DAL
             return SqlHelper<WebMenus>.ExceuteNonQuery(sql, new WebMenus { WebMenus_Id = id });
         }
 
-
         public IList<WebMenus> GetAll()
+        {
+            string sql = "select * from WebMenus where WebMenus_DeleteId = 1  order by WebMenus_CreateTime";
+            return SqlHelper<WebMenus>.Query(sql, null);
+        }
+
+        public IList<WebMenus> GetAllWhatIsShow()
         {
             string sql = "select * from WebMenus where WebMenus_DeleteId = 1 and WebMenus_IsShow = 1 order by WebMenus_CreateTime";
             return SqlHelper<WebMenus>.Query(sql, null);

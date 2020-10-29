@@ -153,42 +153,41 @@ img{ border:none;}
 
 
 .pages {
-    color: #999;
+    color: #FF7525;
 }
 
 .pages a, .pages .cpb {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
     text-decoration: none;
     float: left;
     padding: 0 5px;
     border: 1px solid #ddd;
-    background: #ffff;
-    margin: 0 2px;
-    font-size: 11px;
-    color: #000;
+    background: #FFFFFF;
+    margin-right: 3px;
+    font-size: 16px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #585858;
+    font-family: "Arial";
+    font-weight: bold
 }
 
-.pages a:hover {
-    background-color: #3c96ca;
-    color: #fff;
-    border: 1px solid #3c96ca;
-    text-decoration: none;
-}
+    .pages a:hover {
+        width: 32px;
+        height: 32px;
+        background-color: #FF7525;
+        color: #FAFAFC;
+    }
 
-.pages .cpb {
-    font-weight: bold;
-    color: #fff;
-    background: #3c96ca;
-    border: 1px solid #3c96ca;
-}
-
-.pages .srk {
-    height: 13px;
-    font-size: 12px;
-    vertical-align: middle
-}
-
-.pages .btngo {
-    width: 26px;
-    height: 15px;
-    vertical-align: middle;
-}
+    .pages .cpb {
+        width: 32px;
+        height: 32px;
+        font-weight: bold;
+        color: #FAFAFC;
+        background: #FF7525;
+        border: 1px solid #FF7525;
+    }
