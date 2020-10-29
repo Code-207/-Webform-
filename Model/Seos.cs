@@ -13,5 +13,7 @@ namespace Model
         public string Seos_Title { get; set; }
         public string Seos_Keyword { get; set; }
         public string Seos_Description { get; set; }
+
+        public Guid Seos_WebMenuId { get; set; }
     }
 }

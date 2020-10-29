@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/shared/Frontend.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="WebApp.Web.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>好信速贷</title>
+    <title><%=title %></title>
+    <meta name="keyword" content="<%=keyword %>"/>
+    <meta name="description" content="<%=description %>"/>
     <script>
         $(function()
         {

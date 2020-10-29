@@ -74,5 +74,13 @@ namespace DAL
             string sql = "select * from Users where Users_Account = @Users_Account and Users_Password = @Users_Password";
             return SqlHelper<Users>.Query(sql, new Users() {Users_Account = account, Users_Password = password}).FirstOrDefault();
         }
+
+
+        public int ChangePwd(string account, string password)
+        {
+            string sql = "update Users set Users_Password = @Users_Password where Users_Account = @Users_Account";
+            return SqlHelper<Users>.ExceuteNonQuery(sql,
+                new Users() {Users_Account = account, Users_Password = password});
+        }
     }
 }

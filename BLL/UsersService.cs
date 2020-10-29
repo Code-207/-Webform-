@@ -66,5 +66,9 @@ namespace BLL
             return dal.Login(account, password);
         }
 
+        public int ChangePwd(string account, string password)
+        {
+            return dal.ChangePwd(account, password);
+        }
     }
 }

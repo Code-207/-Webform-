@@ -25,6 +25,7 @@ namespace WebApp.Admins.shared
                 var res = ob as ReturnMsg;
                 msg = res.Message;
                 code = (int)res.Code;
+                Session["Msg"] = null;
             }
 
             #region 一级菜单绑定

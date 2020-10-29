@@ -126,16 +126,20 @@
     <Content Include="Admins\assets\vendor\toastr\toastr.min.css" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.js" />
     <Content Include="Admins\Login.aspx" />
+    <Content Include="Admins\LoginOut.aspx" />
     <Content Include="Admins\News\News_Add.aspx" />
     <Content Include="Admins\News\News_List.aspx" />
     <Content Include="Admins\Roles\Roles_Add.aspx" />
     <Content Include="Admins\Roles\Roles_Edit.aspx" />
     <Content Include="Admins\Roles\Roles_List.aspx" />
     <Content Include="Admins\Roles\Roles_Remove.aspx" />
+    <Content Include="Admins\Seos\Seos_Add.aspx" />
+    <Content Include="Admins\Seos\Seos_List.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_Add.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_Edit.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_List.aspx" />
     <Content Include="Admins\SystemMenu\SystemMenus_Remove.aspx" />
+    <Content Include="Admins\UsersInfo\ChangePassword.aspx" />
     <Content Include="Admins\UsersPermissions\UsersPermissions_List.aspx" />
     <Content Include="Admins\Users\Users_Add.aspx" />
     <Content Include="Admins\Users\Users_Edit.aspx" />
@@ -364,6 +368,13 @@
     <Compile Include="Admins\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\LoginOut.aspx.cs">
+      <DependentUpon>LoginOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\LoginOut.aspx.designer.cs">
+      <DependentUpon>LoginOut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\News\News_Add.aspx.cs">
       <DependentUpon>News_Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -406,6 +417,20 @@
     <Compile Include="Admins\Roles\Roles_Remove.aspx.designer.cs">
       <DependentUpon>Roles_Remove.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\Seos\Seos_Add.aspx.cs">
+      <DependentUpon>Seos_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Seos\Seos_Add.aspx.designer.cs">
+      <DependentUpon>Seos_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Seos\Seos_List.aspx.cs">
+      <DependentUpon>Seos_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Seos\Seos_List.aspx.designer.cs">
+      <DependentUpon>Seos_List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\shared\_Backend.Master.cs">
       <DependentUpon>_Backend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -440,6 +465,13 @@
     </Compile>
     <Compile Include="Admins\SystemMenu\SystemMenus_Remove.aspx.designer.cs">
       <DependentUpon>SystemMenus_Remove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\UsersInfo\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\UsersInfo\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\UsersPermissions\UsersPermissions_List.aspx.cs">
       <DependentUpon>UsersPermissions_List.aspx</DependentUpon>

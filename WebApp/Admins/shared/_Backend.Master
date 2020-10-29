@@ -90,10 +90,9 @@
                                     <asp:Label ID="lblNickName" runat="server" Text=""></asp:Label> 
                                     <i class="icon-submenu lnr lnr-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="lnr lnr-user"></i><span>My Profile</span></a></li>
-                                    <li><a href="#"><i class="lnr lnr-envelope"></i><span>Message</span></a></li>
-                                    <li><a href="#"><i class="lnr lnr-cog"></i><span>Settings</span></a></li>
-                                    <li><a href="#"><i class="lnr lnr-exit"></i><span>Logout</span></a></li>
+                                   <%-- <li><a href="#"><i class="lnr lnr-user"></i><span>个人信息</span></a></li>--%>
+                                    <li><a href="../UsersInfo/ChangePassword.aspx"><i class="lnr lnr-cog"></i><span>修改密码</span></a></li>
+                                    <li><a href="../LoginOut.aspx"><i class="lnr lnr-exit"></i><span>登出</span></a></li>
                                 </ul>
                             </li>
                             <!-- <li>

@@ -71,7 +71,7 @@
 </div>
 <div class="fy">
   <div class="gyhd_fy">
-      <div class="pagin">
+      <ul>
           <webdiyer:AspNetPager ID="AspNetPager1" CssClass="pages" CurrentPageButtonClass="cpb"
                                 CustomInfoTextAlign="Left" HorizontalAlign="Right" PageIndexBoxType="TextBox"
                                 ShowCustomInfoSection="Left" ShowMoreButtons="False" ShowNavigationToolTip="True"
@@ -80,7 +80,7 @@
                                  NextPageText=">" PrevPageText="<"
                                 PagingButtonSpacing="2px" SubmitButtonClass="btngo">
           </webdiyer:AspNetPager>
-      </div>
+      </ul>
   </div>
   <div class="clear"></div>
 </div>

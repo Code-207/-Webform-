@@ -49,6 +49,7 @@
     <Compile Include="NewsManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RolesManager.cs" />
+    <Compile Include="SeoManager.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="SystemMenuManager.cs" />
     <Compile Include="UsersManager.cs" />
