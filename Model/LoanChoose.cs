@@ -2,6 +2,9 @@
 
 namespace Model
 {
+    /// <summary>
+    /// 贷款条件
+    /// </summary>
     public class LoanChoose 
     {
         public Guid LoanChoose_Id { get; set; } = Guid.NewGuid();

@@ -2,6 +2,9 @@
 
 namespace Model
 {
+    /// <summary>
+    /// 申请资料
+    /// </summary>
     public class Materials 
     {
         public Guid Materials_Id { get; set; } = Guid.NewGuid();

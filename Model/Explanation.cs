@@ -2,6 +2,9 @@
 
 namespace Model
 {
+    /// <summary>
+    /// 费用说明
+    /// </summary>
     public class Explanation 
     {
         public Guid Explanation_Id { get; set; } = Guid.NewGuid();
