@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutManager.cs" />
+    <Compile Include="BannerManager.cs" />
+    <Compile Include="LoanTypeManager.cs" />
     <Compile Include="NewsManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RolesManager.cs" />

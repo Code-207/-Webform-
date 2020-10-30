@@ -16,6 +16,7 @@ namespace Model
 
         public string Banner_Title { get; set; }
         public string Banner_Link { get; set; }
+        public Guid Banner_WebMenuId { get; set; }
 
     }
 }
