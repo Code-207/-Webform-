@@ -45,6 +45,7 @@
     <Compile Include="Banner.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Copyrights.cs" />
+    <Compile Include="Examine.cs" />
     <Compile Include="Explanation.cs" />
     <Compile Include="FriendShips.cs" />
     <Compile Include="LoanChoose.cs" />

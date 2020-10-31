@@ -7,12 +7,30 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace WebApp.Web
+namespace WebApp.Admins.LoanType
 {
 
 
-    public partial class index
+    public partial class LoanType_List
     {
+
+        /// <summary>
+        /// txtSearch 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+
+        /// <summary>
+        /// btnSearch 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
         /// RepLoanTypeList 控件。
@@ -24,12 +42,12 @@ namespace WebApp.Web
         protected global::System.Web.UI.WebControls.Repeater RepLoanTypeList;
 
         /// <summary>
-        /// RepNewsList 控件。
+        /// AspNetPager1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RepNewsList;
+        protected global::Wuqi.Webdiyer.AspNetPager AspNetPager1;
     }
 }

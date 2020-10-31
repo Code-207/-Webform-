@@ -49,6 +49,7 @@
     <Compile Include="BannerManager.cs" />
     <Compile Include="ContactManager.cs" />
     <Compile Include="CopyrightsManager.cs" />
+    <Compile Include="ExamineManager.cs" />
     <Compile Include="ExplanationManager.cs" />
     <Compile Include="FriendShipsManager.cs" />
     <Compile Include="LoanChooseManager.cs" />

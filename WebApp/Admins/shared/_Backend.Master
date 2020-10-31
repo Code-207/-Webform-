@@ -170,6 +170,12 @@
                             globalPosition: "top center",
                             className:"success"
                         });
+                }else if (code == 404) {
+                    $.notify(msg,
+                        {
+                            globalPosition: "top center",
+                            className: "warning"
+                        });
                 } else {
                     $.notify(msg,
                         {

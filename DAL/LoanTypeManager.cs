@@ -9,14 +9,14 @@ namespace DAL
     {
         public int Add(LoanType model)
         {
-            string sql = "insert into LoanType(LoanType_Id,LoanType_Title,LoanType_Detail,LoanType_Image,LoanType_DeleteId,LoanType_CreateTime,LoanType_UpdateTime) values(@LoanType_Id,@LoanType_Title,@LoanType_Detail,@LoanType_Image,@LoanType_DeleteId,@LoanType_CreateTime,@LoanType_UpdateTime)";
+            string sql = "insert into LoanType(LoanType_Id,LoanType_Title,LoanType_Detail,LoanType_Image,LoanType_IsShow,LoanType_DeleteId,LoanType_CreateTime,LoanType_UpdateTime) values(@LoanType_Id,@LoanType_Title,@LoanType_Detail,@LoanType_Image,@LoanType_IsShow,@LoanType_DeleteId,@LoanType_CreateTime,@LoanType_UpdateTime)";
             return SqlHelper<LoanType>.ExceuteNonQuery(sql, model);
         }
 
 
         public int Edit(LoanType model)
         {
-            string sql = "update LoanType set LoanType_Title=@LoanType_Title,LoanType_Detail=@LoanType_Detail,LoanType_Image=@LoanType_Image,LoanType_UpdateTime=@LoanType_UpdateTime where LoanType_Id=@LoanType_Id  ";
+            string sql = "update LoanType set LoanType_Title=@LoanType_Title,LoanType_Detail=@LoanType_Detail,LoanType_Image=@LoanType_Image,LoanType_IsShow=@LoanType_IsShow,LoanType_UpdateTime=@LoanType_UpdateTime where LoanType_Id=@LoanType_Id  ";
             return SqlHelper<LoanType>.ExceuteNonQuery(sql, model);
         }
 
@@ -47,13 +47,13 @@ namespace DAL
 
         public IList<LoanType> GetLoanTypesByIsShow()
         {
-            string sql = "select * from LoanType where LoanType_DeleteId = 1 and LoanType_IsShow = 1 order By LoanType_UpdateTime desc";
+            string sql = "select top 3 * from LoanType where LoanType_DeleteId = 1 and LoanType_IsShow = 1 order By LoanType_CreateTime";
             return SqlHelper<LoanType>.Query(sql, null);
         }
 
         public IList<LoanType> GetLoanTypesByTitle(string title)
         {
-            string sql = "select * from LoanType where LoanType_DeleteId = 1 and LoanType = @LoanType order By LoanType_UpdateTime desc";
+            string sql = "select * from LoanType where LoanType_DeleteId = 1 and LoanType_Title like @LoanType_Title order By LoanType_UpdateTime desc";
             return SqlHelper<LoanType>.Query(sql, new LoanType(){ LoanType_Title = "%"+title+"%"});
            
         }

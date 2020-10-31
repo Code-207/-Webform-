@@ -23,5 +23,10 @@ namespace BLL
         {
             return dal.ContactOrder(orderId);
         }
+
+        public IList<Order> GetOrder(string name)
+        {
+            return dal.GetOrder(name);
+        }
     }
 }

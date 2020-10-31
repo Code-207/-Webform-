@@ -45,6 +45,7 @@
     <Compile Include="BannerService.cs" />
     <Compile Include="ContactService.cs" />
     <Compile Include="CopyrightsService.cs" />
+    <Compile Include="ExamineService.cs" />
     <Compile Include="ExplanationService.cs" />
     <Compile Include="FriendShipsService.cs" />
     <Compile Include="LoanChooseService.cs" />

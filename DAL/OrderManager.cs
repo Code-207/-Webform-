@@ -18,6 +18,12 @@ namespace DAL
             return SqlHelper<Order>.Query(sql, null);
         }
 
+        public IList<Order> GetOrder(string name)
+        {
+            string sql = "select * from [Order] where Order_Name like @Order_Name order by Order_IsRead desc , Order_Date desc";
+            return SqlHelper<Order>.Query(sql, new Order(){ Order_Name =  "%"+name+"%"});
+        }
+
         public int ContactOrder(Guid orderId)
         {
             string sql = "update [Order] set Order_IsRead = 1 where Order_Id = @Order_Id  ";
