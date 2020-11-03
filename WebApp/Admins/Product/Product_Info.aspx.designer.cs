@@ -7,57 +7,39 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace WebApp.Admins.Order
+namespace WebApp.Admins.Product
 {
 
 
-    public partial class Examine_Edit
+    public partial class Product_Info
     {
 
         /// <summary>
-        /// hfOrderId 控件。
+        /// hfAboutId 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfOrderId;
+        protected global::System.Web.UI.WebControls.HiddenField hfAboutId;
 
         /// <summary>
-        /// hfExamineId 控件。
+        /// ddlLoanType 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfExamineId;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLoanType;
 
         /// <summary>
-        /// txtName 控件。
+        /// txtProductContent 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
-
-        /// <summary>
-        /// ddlResult 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlResult;
-
-        /// <summary>
-        /// txtExamineContent 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtExamineContent;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtProductContent;
 
         /// <summary>
         /// btnSubmit 控件。

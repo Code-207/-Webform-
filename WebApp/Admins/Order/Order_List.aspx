@@ -53,7 +53,7 @@
                                         <%#Eval("Order_Phone") %>
                                     </td> 
                                     <td>
-                                        <%#"¥"+Eval("Order_Amount") %>
+                                        <%#"¥"+Eval("Order_Amount")+"万元" %>
                                     </td> 
                                     <td>
                                         <%#Eval("Order_IsRead").ToString() == "1" ? "已处理" : "未处理" %>

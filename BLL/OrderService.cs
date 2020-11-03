@@ -28,5 +28,11 @@ namespace BLL
         {
             return dal.GetOrder(name);
         }
+
+        public string GetOrderName(Guid id)
+        {
+            return dal.GetOrderName(id);
+        }
+
     }
 }

@@ -10,6 +10,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <script type="text/javascript" src="assets/js1/zzsc.js"></script>
+    <script src="assets/js1/order.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -48,22 +49,22 @@
                     <div class="banner_3">
                         <div class="banner_31">
                             <p>您的姓名:</p>
-                            <input name="" class="banner_31_r" value="如张先生" type="text" />
+                            <input id="orderName" name="" class="banner_31_r" placeholder="如张先生" type="text" />
                             <div class="clear"></div>
                         </div>
                         <div class="banner_31">
                             <p>手机号码:</p>
-                            <input name="" class="banner_31_r" value="您的手机号" type="text" />
+                            <input id="orderPhone" name="" class="banner_31_r" placeholder="您的手机号" type="text" />
                             <div class="clear"></div>
                         </div>
                         <div class="banner_31">
                             <p>申贷金额:</p>
-                            <input name="" class="banner_31_r2" value="输入数字" type="text" />
+                            <input id="orderAmount" name="" class="banner_31_r2" placeholder="输入数字" type="text" />
                             <div class="clear"></div>
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="banner_4"><a href="#"></a></div>
+                    <div class="banner_4"><a href="#" onclick="ContactMe()"></a></div>
                 </div>
                 <div class="clear"></div>
             </div>

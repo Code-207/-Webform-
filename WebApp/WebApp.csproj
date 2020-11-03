@@ -137,6 +137,7 @@
     <Content Include="Admins\News\News_Remove.aspx" />
     <Content Include="Admins\Order\Examine_Edit.aspx" />
     <Content Include="Admins\Order\Order_List.aspx" />
+    <Content Include="Admins\Product\Product_Info.aspx" />
     <Content Include="Admins\Roles\Roles_Add.aspx" />
     <Content Include="Admins\Roles\Roles_Edit.aspx" />
     <Content Include="Admins\Roles\Roles_List.aspx" />
@@ -455,6 +456,13 @@
     <Compile Include="Admins\Order\Order_List.aspx.designer.cs">
       <DependentUpon>Order_List.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\Product\Product_Info.aspx.cs">
+      <DependentUpon>Product_Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Product\Product_Info.aspx.designer.cs">
+      <DependentUpon>Product_Info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\Roles\Roles_Add.aspx.cs">
       <DependentUpon>Roles_Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -601,6 +609,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handler\AddOrderHandler.ashx.cs">
+      <DependentUpon>AddOrderHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -683,6 +694,7 @@
     <Content Include="Admins\assets\vendor\linearicons\fonts\Linearicons-Free.woff" />
     <Content Include="Admins\assets\vendor\linearicons\fonts\Linearicons-Free.woff2" />
     <Content Include="Admins\shared\_Backend.Master" />
+    <Content Include="Handler\AddOrderHandler.ashx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -734,6 +746,7 @@
     <Content Include="Web\assets\images\xydk5_l.png" />
     <Content Include="Web\assets\images\xydk6.png" />
     <Content Include="Web\assets\js1\jquery-1.9.1.js" />
+    <Content Include="Web\assets\js1\order.js" />
     <Content Include="Web\assets\js1\rollinginthedeep.js" />
     <Content Include="Web\assets\js1\zzsc.js" />
     <Content Include="Web\Contact.aspx" />

@@ -20,7 +20,7 @@ namespace DAL
 
         public Examine GetExamineByOrderId(Guid orderId)
         {
-            string sql = "select * from Examine where orderId = @orderId";
+            string sql = "select * from Examine where Examine_OrderId = @Examine_OrderId";
             return SqlHelper<Examine>.Query(sql, new Examine() {Examine_OrderId = orderId}).FirstOrDefault();
         }
     }

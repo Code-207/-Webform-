@@ -1,23 +1,34 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/shared/Frontend.Master" AutoEventWireup="true" CodeBehind="Loan.aspx.cs" Inherits="WebApp.Web.Loan" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>XX贷款</title>
+    <title><%=title %></title>
+    <meta name="keyword" content="<%=keyword %>"/> 
+    <meta name="description" content="<%=description %>"/>
     <script>
         $(function () {
-            //当我们参数对应的是信用贷款的时候,对应的下标值为1
-            //当我们参数对应的是房产贷款的时候,对应的下标值为2
-            //当我们参数对应的是车辆贷款的时候,对应的下标值为3
-            //当我们参数对应的是企业贷款的时候,对应的下标值为4
-            //当我们参数对应的是我要贷款的时候,对应的下标值为5
+            var url = window.location.href;
+            var type = url.substring(url.lastIndexOf('=') + 1);
+            if (type == "credit") {
+                $(".nav_r>ul>li:eq(1)").addClass("cur");
+            } else if (type == "house") {
+                $(".nav_r>ul>li:eq(2)").addClass("cur");
+            } else if (type == "car") {
+                $(".nav_r>ul>li:eq(3)").addClass("cur");
+            } else if (type == "company") {
+                $(".nav_r>ul>li:eq(4)").addClass("cur");
+            } else if (type == "person") {
+                $(".nav_r>ul>li:eq(5)").addClass("cur");
+            }
+            
 
-            $(".nav_r>ul>li:eq(1)").addClass("cur");
+           
         });
 
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="xydk1">
-        <p>信用贷款</p>
+        <p><%=title %></p>
         <div class="xydk1_2">Credit loan</div>
     </div>
     <div class="xydk2">
@@ -26,7 +37,7 @@
             <span>Product introduction</span>
         </div>
         <div class="xydk22">
-            <p>无抵押贷款，又称无担保贷款，或者是信用贷款，是不需要任何抵押物，只需身份证明，收入证明，住址证明等材料（具体证明材料要看是什么银行）即可向银行申请的贷款。信用贷款具有无担保、时间快、手续简单等特点。获得放款之前，申请人只需要提供相关资料，不需要投入任何贷前费用。</p>
+            <p><%=productDetail %></p>
         </div>
         <div class="clear"></div>
     </div>
