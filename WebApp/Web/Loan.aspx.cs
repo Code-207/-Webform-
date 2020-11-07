@@ -11,6 +11,7 @@ namespace WebApp.Web
     public partial class Loan : System.Web.UI.Page
     {
         private readonly LoanTypeService typeSvc = new LoanTypeService();
+        private readonly LoanChooseService chooseSvc = new LoanChooseService();
         private readonly ProductService proSvc = new ProductService();
         private readonly SeosService seoSvc = new SeosService();
         public string productDetail = "", title = "", keyword = "", description = "";
@@ -44,6 +45,12 @@ namespace WebApp.Web
             var data = typeSvc.GetLoanTypesByTitle(title).FirstOrDefault();
             productDetail = proSvc.GetProductByLoanTypeId(data.LoanType_Id).Product_Detail;
 
+            #endregion
+
+            #region 贷款条件绑定
+            var chooseData = chooseSvc.GetLoanChooseByLoanTypeId(data.LoanType_Id);
+            this.RepChoose.DataSource = chooseData;
+            this.RepChoose.DataBind();
             #endregion
 
 

@@ -9,7 +9,7 @@ namespace Model
         public int Contact_DeleteId { get; set; } = 1;
 
         public DateTime Contact_CreateTime { get; set; } = DateTime.Now;
-        public DateTime UpdateTime { get; set; } = DateTime.Now;
+        public DateTime Contact_UpdateTime { get; set; } = DateTime.Now;
         public string Contact_Address { get; set; }
 
         public string Contact_QQ1 { get; set; }
@@ -22,7 +22,10 @@ namespace Model
         public string Contact_Phone { get; set; }
         public string Contact_WorkTime { get; set; }
         public string Contact_QRCode { get; set; }
-     
+
+        public string Contact_Fax { get; set; }
+
+        public string Contact_Email { get; set; }
 
 
     }

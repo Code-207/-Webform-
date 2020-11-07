@@ -125,6 +125,11 @@
     <Content Include="Admins\assets\vendor\toastr\toastr.js" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.css" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.js" />
+    <Content Include="Admins\Contact\Contact_Info.aspx" />
+    <Content Include="Admins\LoanChoose\LoanChoose_Add.aspx" />
+    <Content Include="Admins\LoanChoose\LoanChoose_Edit.aspx" />
+    <Content Include="Admins\LoanChoose\LoanChoose_List.aspx" />
+    <Content Include="Admins\LoanChoose\LoanChoose_Remove.aspx" />
     <Content Include="Admins\LoanType\LoanType_Add.aspx" />
     <Content Include="Admins\LoanType\LoanType_Edit.aspx" />
     <Content Include="Admins\LoanType\LoanType_List.aspx" />
@@ -371,6 +376,41 @@
     </Compile>
     <Compile Include="Admins\About\About_List.aspx.designer.cs">
       <DependentUpon>About_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Contact\Contact_Info.aspx.cs">
+      <DependentUpon>Contact_Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Contact\Contact_Info.aspx.designer.cs">
+      <DependentUpon>Contact_Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_Add.aspx.cs">
+      <DependentUpon>LoanChoose_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_Add.aspx.designer.cs">
+      <DependentUpon>LoanChoose_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_Edit.aspx.cs">
+      <DependentUpon>LoanChoose_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_Edit.aspx.designer.cs">
+      <DependentUpon>LoanChoose_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_List.aspx.cs">
+      <DependentUpon>LoanChoose_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_List.aspx.designer.cs">
+      <DependentUpon>LoanChoose_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_Remove.aspx.cs">
+      <DependentUpon>LoanChoose_Remove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\LoanChoose\LoanChoose_Remove.aspx.designer.cs">
+      <DependentUpon>LoanChoose_Remove.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\LoanType\LoanType_Add.aspx.cs">
       <DependentUpon>LoanType_Add.aspx</DependentUpon>
@@ -752,6 +792,7 @@
     <Content Include="Web\Contact.aspx" />
     <Content Include="Web\Index.aspx" />
     <Content Include="Web\Loan.aspx" />
+    <Content Include="Web\map.htm" />
     <Content Include="Web\NewsInfo.aspx" />
     <Content Include="Web\NewsList.aspx" />
     <Content Include="Web\shared\Frontend.Master" />
@@ -762,6 +803,7 @@
     <Folder Include="kindeditor\asp.net\bin\" />
     <Folder Include="Models\" />
     <Folder Include="upload\about\" />
+    <Folder Include="upload\contact\" />
     <Folder Include="upload\loantype\" />
     <Folder Include="upload\news\" />
     <Folder Include="Web\assets\images1\" />

@@ -46,58 +46,24 @@
         <span>Loan conditions</span>
     </div>
     <ul class="xydk4">
-        <li>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk41.png" width="86" height="10" /></div>
-            <div>
-                <div class="xydk4_21">1</div>
-                <div class="xydk4_3">
-                    <p class="wordwrap">是企业客户信用等级至少在AA-(含)级以上的，经国有商业银行省级分行审批可以发放信用贷款；</p>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk42.png" width="86" height="10" /></div>
-        </li>
-        <li>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk43.png" width="86" height="10" /></div>
-            <div>
-                <div class="xydk4_22">2</div>
-                <div class="xydk4_3">
-                    <p class="wordwrap">是企业客户信用等级至少在AA-(含)级以上的，经国有商业银行省级分行审批可以发放信用贷款；</p>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk44.png" width="86" height="10" /></div>
-        </li>
-        <li>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk45.png" width="86" height="10" /></div>
-            <div>
-                <div class="xydk4_23">3</div>
-                <div class="xydk4_3">
-                    <p class="wordwrap">是企业客户信用等级至少在AA-(含)级以上的，经国有商业银行省级分行审批可以发放信用贷款；</p>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk46.png" width="86" height="10" /></div>
-        </li>
-        <li>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk47.png" width="86" height="10" /></div>
-            <div>
-                <div class="xydk4_24">4</div>
-                <div class="xydk4_3">
-                    <p class="wordwrap">是企业客户信用等级至少在AA-(含)级以上的，经国有商业银行省级分行审批可以发放信用贷款；</p>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="xydk4_1">
-                <img src="assets/images/xydk48.png" width="86" height="10" /></div>
-        </li>
+        <asp:Repeater ID="RepChoose" runat="server">
+            <ItemTemplate>
+                <li>
+                    <div class="xydk4_1">
+                        <img src="assets/images/xydk4<%#(Container.ItemIndex+1)*2-1 %>.png" width="86" height="10" />
+                    </div>
+                    <div>
+                        <div class="xydk4_2<%#Container.ItemIndex+1 %>"><%#Container.ItemIndex+1 %></div>
+                        <div class="xydk4_3">
+                            <p class="wordwrap"><%#Eval("LoanChoose_Detail") %></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="xydk4_1">
+                        <img src="assets/images/xydk4<%#(Container.ItemIndex+1)*2 %>.png" width="86" height="10" /></div>
+                </li>
+            </ItemTemplate>
+        </asp:Repeater>
         <div class="clear"></div>
     </ul>
     <script type="text/javascript">
